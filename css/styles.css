@@ -65,9 +65,9 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
 }
-.site-nav .link:hover ,
+.site-nav.link:hover ,
 .site-nav .link:focus {
-    color: var(--accent-color);
+color: var(--accent-color);
 }
 .accent-link {
     color: var(--accent-color);
@@ -79,39 +79,34 @@ body {
 .letter-icon {
     width: 16px;
     height: 12px;
-    fill:var(--additional-text-color);
+    fill:currentColor;
+    margin-right: 10px;
 }
-.letter-icon:hover,
-.letter-icon:focus {
-   fill: var(--accent-color);
-
+.info-nav .item {
+    display: flex;
+    align-items: center;
+}
+.info-nav .item {
+    color: var(--additional-text-color);
+    font-weight: 500;
+    line-height :1.1;
+    letter-spacing: 0.02em;}
+.info-nav .item:hover{
+        color:var(--accent-color);
+    }
+.info-nav .item a {
+    color: inherit;
 }
 .phone-icon {
     width: 10px;
     height: 16px;
-    fill:var(--additional-text-color)
-
+    fill:currentColor;
 }
-.phone-icon:hover,
-.phone-icon:focus {
-   fill: var(--accent-color);
-
-}
-.info-nav .item + .item {
+.info-nav .item + .item{
     margin-left: 50px;
 }
-.info-nav .item:nth-child(2n){
-    margin-left: 10px;
-}
-.info-nav .link {
-    color: var(--additional-text-color);
-    font-weight: 500;
-    line-height :1.1;
-    letter-spacing: 0.02em;
-}
-.info-nav .link:hover,
-.info-nav .link:focus {
-    color: var(--accent-color);
+.info-nav .link{
+    margin-right: 10px; 
 }
 .hero {
     max-width: 1600px;
